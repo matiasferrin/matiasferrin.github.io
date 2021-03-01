@@ -1,0 +1,195 @@
+/**********
+ * General styles *
+ **********/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", "Tahoma", "Verdana", sans-serif;
+}
+
+p {
+    margin: 0 0 20px;
+}
+
+.main {
+    padding-top: 80px;
+}
+
+.holder {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.list-reset {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.section {
+    padding: 100px 0;
+}
+
+.title {
+    display: block;
+    margin: 0 0 20px;
+    font-size: 35px;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+/***************
+ * UI Elements *
+ ***************/
+
+.btn {
+    border: 0;
+    background: #D21E1E;
+    padding: 10px 15px;
+    font-size: 16px;
+    color: #fff;
+    letter-spacing: 1px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.35s;
+}
+
+.btn.btn-light {
+    background: #D21E1E;
+    color: white;
+    border: 2px solid #271303;
+}
+
+.btn:hover {
+    background: #ff2727;
+    font-size: 1.1rem;
+}
+
+.btn.btn-light:hover {
+    font-size: 16px;
+}
+
+input {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 2px solid #aaa;
+}
+
+
+/**********
+ * Header *
+ **********/
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    border-bottom: 1px solid #ccc;
+    padding: 15px 0;
+    z-index: 9;
+}
+
+#header .holder {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header .nav-bar ul {
+    display: flex;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+#header .nav-bar ul li a {
+    padding: 10px 15px;
+    color: #424242;
+    text-decoration: none;
+    transition: all 0.35s;
+}
+
+#header .nav-bar ul li a:hover {
+    color: #D21E1E;
+}
+
+@media all and (max-width: 768px) {
+    #header .logo-wrapper .header-img {
+        display: none;
+    }
+    #header .nav-bar ul {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #header .holder {
+        justify-content: center;
+    }
+}
+
+
+/**********
+ * how-it-works section*
+ **********/
+
+.section#how-it-works,
+.section#subscription {
+    background: #f0f0f0;
+    text-align: center;
+}
+
+iframe {
+    border: 0;
+}
+
+
+/**********
+ * plans section *
+ **********/
+
+.plans {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.plans .plan {
+    position: relative;
+    max-width: 260px;
+    padding: 15px 15px 50px;
+    margin: 0 15px 30px;
+    border-radius: 7px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.plans .plan .title {
+    font-weight: 400;
+    text-transform: none;
+}
+
+.plans .plan .price {
+    margin: 0 0 15px;
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.plans .plan .btn {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.description {
+    margin-bottom: 10px;
+}
